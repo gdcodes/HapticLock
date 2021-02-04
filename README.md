@@ -1,1 +1,1 @@
-# HiddenLock
+# HapticLock
