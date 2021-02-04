@@ -9,6 +9,7 @@ class LoginViewController: UIViewController {
     private var pinEntry = PinEntry()
     private var feedbackGenerator = UINotificationFeedbackGenerator()
     var pin: String = "0000"
+    var attemptNum: Int = 0
     private var currentNum: Int = 0
     
     override func viewDidLoad() {
@@ -35,10 +36,12 @@ class LoginViewController: UIViewController {
         observer = pinEntry.observe(\.entry) { [weak self] object, change in
             guard let self = self else { return }
             if object.entry.count == self.pin.count {
+                self.attemptNum += 1
                 if self.pin == object.entry {
                     // ONLY For Development
                     print(object.entry)
                     print("SUCCESS! AUTHENTICATED.")
+                    print("WITH \(self.attemptNum) ATTEMPT(S).")
                     
                     // Reset observable data
                     self.resetPinEntry()
@@ -49,7 +52,9 @@ class LoginViewController: UIViewController {
                 } else {
                     // ONLY For Development
                     print("FAILED TO AUTHENTICATE.")
+                    self.hapticManager?.stop()
                     self.feedbackGenerator.notificationOccurred(.error)
+                    self.resetPinEntry()
                 }
             }
         }

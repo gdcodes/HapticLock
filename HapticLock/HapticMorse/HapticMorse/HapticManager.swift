@@ -62,7 +62,13 @@ extension HapticManager {
         }
     }
     
+    public func stop() {
+        hapticEngine.stop(completionHandler: { (_) -> Void in
+        })
+    }
+    
     private func playHapticFromPattern(_ pattern: CHHapticPattern) throws {
+        stop()
         try hapticEngine.start()
         let player = try hapticEngine.makePlayer(with: pattern)
         try player.start(atTime: CHHapticTimeImmediate)
