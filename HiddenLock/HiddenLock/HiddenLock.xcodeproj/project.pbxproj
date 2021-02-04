@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5701F64B257D1AC300619488 /* PinEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5701F64A257D1AC300619488 /* PinEntry.swift */; };
+		5701F653257D2EEB00619488 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5701F652257D2EEB00619488 /* SetupViewController.swift */; };
 		57297C5D256D12F600B9E007 /* HapticMorse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57297BF3256D0A0900B9E007 /* HapticMorse.framework */; };
 		57297C5E256D12F600B9E007 /* HapticMorse.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57297BF3256D0A0900B9E007 /* HapticMorse.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5742D7602559CB32003CC74E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5742D75F2559CB32003CC74E /* AppDelegate.swift */; };
 		5742D7622559CB32003CC74E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5742D7612559CB32003CC74E /* SceneDelegate.swift */; };
-		5742D7642559CB32003CC74E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5742D7632559CB32003CC74E /* ViewController.swift */; };
+		5742D7642559CB32003CC74E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5742D7632559CB32003CC74E /* LoginViewController.swift */; };
 		5742D7672559CB32003CC74E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5742D7652559CB32003CC74E /* Main.storyboard */; };
 		5742D7692559CB33003CC74E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5742D7682559CB33003CC74E /* Assets.xcassets */; };
 		5742D76C2559CB33003CC74E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5742D76A2559CB33003CC74E /* LaunchScreen.storyboard */; };
 		5742D7772559CB33003CC74E /* HiddenLockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5742D7762559CB33003CC74E /* HiddenLockTests.swift */; };
 		5742D7822559CB33003CC74E /* HiddenLockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5742D7812559CB33003CC74E /* HiddenLockUITests.swift */; };
+		578446AF25C094760019F991 /* PredefinedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578446AE25C094760019F991 /* PredefinedValues.swift */; };
+		57E2F5AC25B6EEA500727085 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E2F5AB25B6EEA500727085 /* HomeViewController.swift */; };
+		57EDA5D725CC142000B42AE4 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EDA5D625CC142000B42AE4 /* Constraints.swift */; };
 		57F0426125682E180028A207 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F0426025682E180028A207 /* Toast.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,11 +57,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5701F64A257D1AC300619488 /* PinEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinEntry.swift; sourceTree = "<group>"; };
+		5701F652257D2EEB00619488 /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		57297BF3256D0A0900B9E007 /* HapticMorse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HapticMorse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5742D75C2559CB32003CC74E /* HiddenLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiddenLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5742D75F2559CB32003CC74E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5742D7612559CB32003CC74E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5742D7632559CB32003CC74E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5742D7632559CB32003CC74E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5742D7662559CB32003CC74E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5742D7682559CB33003CC74E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5742D76B2559CB33003CC74E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,6 +74,9 @@
 		5742D77D2559CB33003CC74E /* HiddenLockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiddenLockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5742D7812559CB33003CC74E /* HiddenLockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenLockUITests.swift; sourceTree = "<group>"; };
 		5742D7832559CB33003CC74E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		578446AE25C094760019F991 /* PredefinedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredefinedValues.swift; sourceTree = "<group>"; };
+		57E2F5AB25B6EEA500727085 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		57EDA5D625CC142000B42AE4 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		57F0426025682E180028A207 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,8 +140,13 @@
 			children = (
 				5742D75F2559CB32003CC74E /* AppDelegate.swift */,
 				5742D7612559CB32003CC74E /* SceneDelegate.swift */,
-				5742D7632559CB32003CC74E /* ViewController.swift */,
+				5701F652257D2EEB00619488 /* SetupViewController.swift */,
+				5742D7632559CB32003CC74E /* LoginViewController.swift */,
+				57E2F5AB25B6EEA500727085 /* HomeViewController.swift */,
 				5742D7652559CB32003CC74E /* Main.storyboard */,
+				57EDA5D625CC142000B42AE4 /* Constraints.swift */,
+				5701F64A257D1AC300619488 /* PinEntry.swift */,
+				578446AE25C094760019F991 /* PredefinedValues.swift */,
 				57F0426025682E180028A207 /* Toast.swift */,
 				5742D7682559CB33003CC74E /* Assets.xcassets */,
 				5742D76A2559CB33003CC74E /* LaunchScreen.storyboard */,
@@ -289,10 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5742D7642559CB32003CC74E /* ViewController.swift in Sources */,
+				5742D7642559CB32003CC74E /* LoginViewController.swift in Sources */,
 				57F0426125682E180028A207 /* Toast.swift in Sources */,
 				5742D7602559CB32003CC74E /* AppDelegate.swift in Sources */,
+				5701F64B257D1AC300619488 /* PinEntry.swift in Sources */,
+				57EDA5D725CC142000B42AE4 /* Constraints.swift in Sources */,
+				57E2F5AC25B6EEA500727085 /* HomeViewController.swift in Sources */,
+				5701F653257D2EEB00619488 /* SetupViewController.swift in Sources */,
 				5742D7622559CB32003CC74E /* SceneDelegate.swift in Sources */,
+				578446AF25C094760019F991 /* PredefinedValues.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

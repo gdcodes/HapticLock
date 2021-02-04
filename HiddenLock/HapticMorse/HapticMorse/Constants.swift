@@ -1,7 +1,7 @@
 enum Dot {
     static let duration: Double = 0.1
     static let intensity: Float = 1.0
-    static let sharpness: Float = 0.25
+    static let sharpness: Float = 0.5
 }
 
 enum Dash {
