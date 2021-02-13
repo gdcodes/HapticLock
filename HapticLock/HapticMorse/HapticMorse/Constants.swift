@@ -1,12 +1,12 @@
 enum Dot {
-    static let duration: Double = 0.1
+    static let duration: Double = 0.15
     static let intensity: Float = 1.0
-    static let sharpness: Float = 0.5
+    static let sharpness: Float = 1.0
 }
 
 enum Dash {
     static let duration: Double = 0.2
-    static let intensity: Float = 0.75
+    static let intensity: Float = 1.0
     static let sharpness: Float = 0.0
 }
 
