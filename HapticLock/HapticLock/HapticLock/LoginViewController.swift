@@ -10,7 +10,7 @@ class LoginViewController: UIViewController {
     private var feedbackGenerator = UINotificationFeedbackGenerator()
     var pin: String = "0000"
     var attemptNum: Int = 0
-    private var currentNum: Int = 0
+    var currentNum: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()

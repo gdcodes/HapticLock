@@ -11,18 +11,21 @@ class SetupViewController: UIViewController {
             vc.isModalInPresentation = true
             
             switch(segue.identifier) {
-            case ("fourDigitOptionOne"):
+            case ("fourDigitOptionOneFromZero"):
                 vc.pin = FourDigitPasscode.optionOne
-            case ("fourDigitOptionTwo"):
+            case ("fourDigitOptionTwoFromZero"):
                 vc.pin = FourDigitPasscode.optionTwo
-            case ("fourDigitOptionThree"):
+            case ("fourDigitOptionThreeFromZero"):
                 vc.pin = FourDigitPasscode.optionThree
-            case ("sixDigitOptionOne"):
-                vc.pin = SixDigitPasscode.optionOne
-            case ("sixDigitOptionTwo"):
-                vc.pin = SixDigitPasscode.optionTwo
-            case ("sixDigitOptionThree"):
-                vc.pin = SixDigitPasscode.optionThree
+            case ("fourDigitOptionOneFromRand"):
+                vc.pin = FourDigitPasscode.optionOne
+                vc.currentNum = Int.random(in: 0...9)
+            case ("fourDigitOptionTwoFromRand"):
+                vc.pin = FourDigitPasscode.optionTwo
+                vc.currentNum = Int.random(in: 0...9)
+            case ("fourDigitOptionThreeFromRand"):
+                vc.pin = FourDigitPasscode.optionThree
+                vc.currentNum = Int.random(in: 0...9)
             case .none:
                 break
             case .some(_):

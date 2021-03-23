@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VSo-Rj-aTr">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -38,8 +39,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6-digit PIN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCs-YN-yCI">
-                                <rect key="frame" x="32" y="255" width="82.5" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4-digit (starting from random number)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCs-YN-yCI">
+                                <rect key="frame" x="32" y="255" width="292" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -49,7 +50,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Option #1"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="fourDigitOptionOne" animates="NO" modalPresentationStyle="fullScreen" id="ffX-66-fRa"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="fourDigitOptionOneFromZero" animates="NO" modalPresentationStyle="fullScreen" id="ffX-66-fRa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fz-hM-h71">
@@ -57,7 +58,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Option #2"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="fourDigitOptionTwo" animates="NO" modalPresentationStyle="fullScreen" id="xut-ci-7uV"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="fourDigitOptionTwoFromZero" animates="NO" modalPresentationStyle="fullScreen" id="xut-ci-7uV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKR-O5-y0V">
@@ -65,7 +66,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Option #3"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="fourDigitOptionThree" animates="NO" modalPresentationStyle="fullScreen" id="bb8-yN-P0e"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="fourDigitOptionThreeFromZero" animates="NO" modalPresentationStyle="fullScreen" id="bb8-yN-P0e"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vta-HO-IBY">
@@ -73,7 +74,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Option #4"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="sixDigitOptionOne" animates="NO" modalPresentationStyle="fullScreen" id="QoS-Ag-Ww3"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="fourDigitOptionOneFromRand" animates="NO" modalPresentationStyle="fullScreen" id="QoS-Ag-Ww3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5n-Cy-JXv">
@@ -81,7 +82,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Option #5"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="sixDigitOptionTwo" animates="NO" modalPresentationStyle="fullScreen" id="Zap-jZ-FF8"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="fourDigitOptionTwoFromRand" animates="NO" modalPresentationStyle="fullScreen" id="Zap-jZ-FF8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEi-Tp-MPT">
@@ -89,11 +90,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Option #6"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="sixDigitOptionThree" animates="NO" modalPresentationStyle="fullScreen" id="BE4-Cq-Qsw"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="fourDigitOptionThreeFromRand" animates="NO" modalPresentationStyle="fullScreen" id="BE4-Cq-Qsw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4-digit PIN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bs3-gk-ke5">
-                                <rect key="frame" x="32" y="156" width="82.5" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4-digit (starting from zero)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bs3-gk-ke5">
+                                <rect key="frame" x="32" y="156" width="292" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -166,7 +167,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ffX-66-fRa"/>
+        <segue reference="BE4-Cq-Qsw"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
