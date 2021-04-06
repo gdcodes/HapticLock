@@ -24,7 +24,6 @@
 		57EDA5F025CC1ED700B42AE4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57EDA5EE25CC1ED700B42AE4 /* Info.plist */; };
 		57EDA5F825CC1EE400B42AE4 /* HiddenLockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EDA5F625CC1EE400B42AE4 /* HiddenLockUITests.swift */; };
 		57EDA5F925CC1EE400B42AE4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57EDA5F725CC1EE400B42AE4 /* Info.plist */; };
-		57F0426125682E180028A207 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F0426025682E180028A207 /* Toast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +78,6 @@
 		57EDA5EE25CC1ED700B42AE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57EDA5F625CC1EE400B42AE4 /* HiddenLockUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiddenLockUITests.swift; sourceTree = "<group>"; };
 		57EDA5F725CC1EE400B42AE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57F0426025682E180028A207 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +147,6 @@
 				57EDA5D625CC142000B42AE4 /* Constraints.swift */,
 				5701F64A257D1AC300619488 /* PinEntry.swift */,
 				578446AE25C094760019F991 /* PredefinedValues.swift */,
-				57F0426025682E180028A207 /* Toast.swift */,
 				5742D7682559CB33003CC74E /* Assets.xcassets */,
 				5742D76A2559CB33003CC74E /* LaunchScreen.storyboard */,
 				5742D76D2559CB33003CC74E /* Info.plist */,
@@ -309,7 +306,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5742D7642559CB32003CC74E /* LoginViewController.swift in Sources */,
-				57F0426125682E180028A207 /* Toast.swift in Sources */,
 				5742D7602559CB32003CC74E /* AppDelegate.swift in Sources */,
 				5701F64B257D1AC300619488 /* PinEntry.swift in Sources */,
 				57EDA5D725CC142000B42AE4 /* Constraints.swift in Sources */,
