@@ -14,3 +14,7 @@ enum Time {
     static let start: Double = 0.0
     static let offset: Double = 0.1
 }
+
+public enum Lang: String {
+    case morse, dots
+}

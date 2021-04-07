@@ -84,7 +84,7 @@ class LoginViewController: UIViewController {
     // Play haptic patten to indicate how many digits have been entered
     @objc func handleLongPress(sender: UILongPressGestureRecognizer) {
         if sender.state == .began {
-            hapticManager?.playTacton(pinEntry.entry.count, "Size")
+            hapticManager?.playTacton(pinEntry.entry.count, HapticMorse.Lang.dots)
         }
     }
 
@@ -99,7 +99,7 @@ class LoginViewController: UIViewController {
                 currentNum = 0
             }
             
-            hapticManager?.playTacton(currentNum)
+            hapticManager?.playTacton(currentNum, HapticMorse.Lang.morse)
             
             // ONLY For Development
             print("Swipe Up")
@@ -111,7 +111,7 @@ class LoginViewController: UIViewController {
                 currentNum = 9
             }
             
-            hapticManager?.playTacton(currentNum)
+            hapticManager?.playTacton(currentNum, HapticMorse.Lang.morse)
             
             // ONLY For Development
             print("Swipe Down")

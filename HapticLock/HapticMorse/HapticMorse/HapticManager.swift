@@ -53,13 +53,14 @@ public class HapticManager {
 
 extension HapticManager {
     
-    public func playTacton(_ num: Int, _ lang: String = "Morse") {
+    public func playTacton(_ num: Int, _ lang: Lang) {
         do {
-            if (lang == "Morse") {
+            switch (lang) {
+            case Lang.morse:
                 let pattern = try patternFromDigit(num)
                 try playHapticFromPattern(pattern)
-            } else {
-                let pattern = try patternFromSize(num)
+            case Lang.dots:
+                let pattern = try patternFromPasscodeSize(num)
                 try playHapticFromPattern(pattern)
             }
         } catch {
@@ -79,7 +80,7 @@ extension HapticManager {
         try player.start(atTime: CHHapticTimeImmediate)
     }
     
-    private func patternFromSize(_ size: Int) throws -> CHHapticPattern {
+    private func patternFromPasscodeSize(_ size: Int) throws -> CHHapticPattern {
         // Reset relative time
         self.relativeTime = Time.start
         
@@ -105,7 +106,7 @@ extension HapticManager {
                 events.append(dotEvent(relativeTime: self.relativeTime))
             }
         default:
-            events = []
+            break
         }
 
         return try CHHapticPattern(events: events, parameters: [])
@@ -175,7 +176,7 @@ extension HapticManager {
             }
             events.append(dotEvent(relativeTime: self.relativeTime))
         default:
-            events = []
+            break
         }
 
         return try CHHapticPattern(events: events, parameters: [])
