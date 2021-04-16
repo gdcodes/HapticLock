@@ -1,6 +1,6 @@
 # HapticLock
 
-Although PIN entry is widely used for mobile authentication, as a primary tool or fallback mechanism, it is vulnerable to several types of observational/side-channel attacks including smudge attacks, thermal attacks and shoulder surfing. 
+Although PIN entry is widely used for mobile authentication, as a primary tool or fallback mechanism, it is vulnerable to several types of observational/side-channel attacks including shoulder surfing, smudge and thermal attacks. 
 
 Shoulder surfing refers to the practice of observing someone to gain unauthorised access to private information. Visual output provides observational attackers with context for touchscreen interaction (e.g., allowing them to identify a PIN by watching which icons the user taps).
 
