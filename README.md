@@ -17,7 +17,7 @@ This project involves extending the audio-assisted scroll input method explored 
 
 1. Open workspace (HapticLock.xcworkspace) in Xcode
 2. Go to Product -> Scheme and select HapticLock
-3. Connect iPhone to computer and select connected device from dropdown menu (near the stop sign)
+3. Connect iPhone to computer and select connected device from dropdown menu (near the stop button on the top left of the screen)
 4. Select the play button to run the app (note: you may need to trust developer profile by following the steps outlined [here](https://apple.stackexchange.com/questions/206143/ios-untrusted-developer-error-when-testing-app/206144).
 
 ## Guide to Using the App
@@ -66,6 +66,7 @@ For the versions available, see the [tags on this repository](https://github.com
 <a id="1">[1]</a> 
 C. Chen, S. H. Chua, D. Chung, S. T. Perrault,
 S. Zhao, and W. Kei. Eyes-free gesture passwords: a comparison of various eyes-free input methods. In Proceedings of the Second International Symposium of Chinese CHI, Chinese CHI ’14, New York, NY, USA, Apr. 2014. Association for Computing Machinery. DOI: [https://doi.org/10.1145/2592235.2592248](https://doi.org/10.1145/2592235.2592248).
+
 <a id="2">[2]</a> 
 Y. Abdelrahman, M. Khamis, S. Schneegass, and
 F. Alt. Stay Cool! Understanding Thermal Attacks on Mobile-based User Authentication. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems, CHI ’17, New York, NY, USA, May 2017. Association for Computing Machinery. DOI: [https://dl.acm.org/doi/10.1145/3399715.3399819](https://dl.acm.org/doi/10.1145/3399715.3399819).
