@@ -49,9 +49,18 @@ The current number will always be between 0 and 9 inclusive, e.g., swiping up fr
 
 Before using the app, please familiarise yourself with Morse code for digits from 0 to 9 inclusive by using this [Morse code translator](https://morsecode.world/international/translator.html).
 
-When you open the app, there will be a menu of options with predefined PINs or passcodes which can be found [here](https://github.com/gdcodes/HapticLock/blob/main/HapticLock/HapticLock/HapticLock/PredefinedValues.swift).
+When you open the app, you will be presented with a menu of options with predefined PINs/passcodes which can be found [here](https://github.com/gdcodes/HapticLock/blob/main/HapticLock/HapticLock/HapticLock/PredefinedValues.swift)[*].
 
-If you tap one of the options, you will be taken to a blank screen where you can enter the corresponding predefined PIN by using the aforementioned touch gestures. If you enter the wrong PIN, the standard haptic feedback will be generated; otherwise, you will be taken to a screen representing the 'Home' screen with a welcome message.
+If you tap one of the options, you will be taken to a blank screen where you can enter the corresponding predefined PIN by using the aforementioned touch gestures. If you enter the wrong PIN, the standard iOS haptic feedback will be generated to indicate a failed attempt and the digits that you entered will be erased; otherwise, you will be taken to a screen representing the 'Home' screen with a welcome message.
+
+[*] Please note: the following code snippet will not be used in version 2.0+ (which only allows 4-digit PIN entry). Instead, in version 2.0+, the PINs for options 1, 2 and 3 are reused for 4, 5 and 6, respectively.
+```
+struct SixDigitPasscode {
+static let optionOne = "847395"
+static let optionTwo = "261407"
+static let optionThree = "580613"
+}
+```
 
 ## Built With
 
