@@ -8,12 +8,14 @@ HapticLock is a novel, eyes-free mobile authentication system, which uses haptic
 
 This project involves extending the audio-assisted scroll input method explored by Chen *et al.* [[1]](#1) and investigating the use of haptic cues, instead of audio, to support the interaction. The scroll input method for PIN entry offers resistance to smudge and thermal attacks as the trace of vertical swipe gestures will overlap and change as the user scrolls (e.g., scrolling too quickly and then reversing back) making the resulting marks and heat traces difficult to decipher [[2]](#2).
 
-## Prerequisites
+## Local Deployment
+
+### Prerequisites
 
 * iPhone running iOS 13.2+
 * Xcode 
 
-## Local Deployment
+### Steps
 
 1. Open workspace (HapticLock.xcworkspace) in Xcode
 2. Go to Product -> Scheme and select HapticLock
@@ -61,7 +63,7 @@ If you tap one of the options, you will be taken to a blank screen where you can
 
 For the versions available, see the [tags on this repository](https://github.com/gdcodes/HapticLock/releases). 
 
-## Acknowledgments
+## References
 
 <a id="1">[1]</a> 
 C. Chen, S. H. Chua, D. Chung, S. T. Perrault,
