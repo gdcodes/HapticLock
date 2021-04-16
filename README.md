@@ -56,9 +56,9 @@ If you tap one of the options, you will be taken to a blank screen where you can
 [*] Please note: the following code snippet will not be used in version 2.0+ (which only allows 4-digit PIN entry). Instead, in version 2.0+, the PINs for options 1, 2 and 3 are reused for 4, 5 and 6, respectively.
 ```
 struct SixDigitPasscode {
-static let optionOne = "847395"
-static let optionTwo = "261407"
-static let optionThree = "580613"
+  static let optionOne = "847395"
+  static let optionTwo = "261407"
+  static let optionThree = "580613"
 }
 ```
 
