@@ -78,7 +78,7 @@ For the versions available, see the [tags on this repository](https://github.com
 
 ## Licensing 
 
-HapticLock MIT licensed. See [LICENSE](https://github.com/gdcodes/HapticLock/blob/main/LICENSE) for the full license text.
+HapticLock is MIT licensed. See [LICENSE](https://github.com/gdcodes/HapticLock/blob/main/LICENSE) for the full license text.
 
 ## References
 
