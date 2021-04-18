@@ -6,7 +6,11 @@ Shoulder surfing refers to the practice of observing someone to gain unauthorise
 
 HapticLock is a novel, eyes-free mobile authentication system, which uses haptic cues based on Morse code to guide non-visual PIN entry. 
 
-This project involves extending the audio-assisted scroll input method explored by Chen *et al.* [[1]](#1) and investigating the use of haptic cues, instead of audio, to support the interaction. The scroll input method for PIN entry offers resistance to smudge and thermal attacks as the trace of vertical swipe gestures will overlap and change as the user scrolls (e.g., scrolling too quickly and then reversing back) making the resulting marks and heat traces difficult to decipher [[2]](#2).
+HapticLock was created for a MSci research project titled: 'HapticLock: Evaluating Eyes-free Authentication Resistant to Shoulder Surfing'. The project involved extending the audio-assisted scroll input method explored by Chen *et al.* [[1]](#1) and investigating the use of haptic cues, instead of audio, to support non-visual PIN entry. 
+
+The usability and security of HapticLock was evaluated in three user studies. Findings show that HapticLock is resistant to video-based shoulder surfing attacks when the device is held in the user’s pocket and provides sufficient protection when the screen is unobscured and the authentication process begins at a random number. In addition, while HapticLock requires more time for authentication compared to traditional PIN entry, results show that it has a low error rate and users would use it when in the presence of potential observers or when accessing private information. 
+
+If you would like to know more about the research or have other enquires, please send an email to [hapticpatternlock@gmail.com](mailto:hapticpatternlock@gmail.com).
 
 ## Local Deployment
 
@@ -20,7 +24,7 @@ This project involves extending the audio-assisted scroll input method explored 
 1. Open workspace (HapticLock.xcworkspace) in Xcode
 2. Go to Product -> Scheme and select HapticLock
 3. Connect iPhone to computer and select connected device from dropdown menu (near the stop button on the top left of the screen)
-4. Select the play button to run the app (note: you may need to trust developer profile by following the steps outlined [here](https://apple.stackexchange.com/questions/206143/ios-untrusted-developer-error-when-testing-app/206144).
+4. Select the play button to run the app (to do this you may need to trust developer profile by following the steps outlined [here](https://apple.stackexchange.com/questions/206143/ios-untrusted-developer-error-when-testing-app/206144))
 
 ## Guide to Using the App
 
@@ -53,7 +57,7 @@ When you open the app, you will be presented with a menu of options with predefi
 
 If you tap one of the options, you will be taken to a blank screen where you can enter the corresponding predefined PIN by using the aforementioned touch gestures. If you enter the wrong PIN, the standard iOS haptic feedback will be generated to indicate a failed attempt and the digits that you entered will be erased; otherwise, you will be taken to a screen representing the 'Home' screen with a welcome message.
 
-[*] Please note: the following code snippet will not be used in version 2.0+ (which only allows 4-digit PIN entry). Instead, in version 2.0+, the PINs for options 1, 2 and 3 are reused for 4, 5 and 6, respectively.
+[*] Please note: the following code snippet will not be used in version 2.0+ (which only allows 4-digit PIN entry). Instead, in version 2.0+, the PINs for options 1, 2 and 3 are reused for options 4, 5 and 6, respectively.
 ```
 struct SixDigitPasscode {
   static let optionOne = "847395"
@@ -72,12 +76,12 @@ struct SixDigitPasscode {
 
 For the versions available, see the [tags on this repository](https://github.com/gdcodes/HapticLock/releases). 
 
+## Licensing 
+
+HapticLock MIT licensed. See [LICENSE](https://github.com/gdcodes/HapticLock/blob/main/LICENSE) for the full license text.
+
 ## References
 
 <a id="1">[1]</a> 
 C. Chen, S. H. Chua, D. Chung, S. T. Perrault,
 S. Zhao, and W. Kei. Eyes-free gesture passwords: a comparison of various eyes-free input methods. In Proceedings of the Second International Symposium of Chinese CHI, Chinese CHI ’14, New York, NY, USA, Apr. 2014. Association for Computing Machinery. DOI: [https://doi.org/10.1145/2592235.2592248](https://doi.org/10.1145/2592235.2592248).
-
-<a id="2">[2]</a> 
-Y. Abdelrahman, M. Khamis, S. Schneegass, and
-F. Alt. Stay Cool! Understanding Thermal Attacks on Mobile-based User Authentication. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems, CHI ’17, New York, NY, USA, May 2017. Association for Computing Machinery. DOI: [https://dl.acm.org/doi/10.1145/3399715.3399819](https://dl.acm.org/doi/10.1145/3399715.3399819).
