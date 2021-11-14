@@ -4,7 +4,7 @@ Although PIN entry is widely used for mobile authentication, as a primary tool o
 
 Visual output and fingertip traces can be exploited by attackers to gain unauthorised access to a system (e.g., by watching or recording which icons a user taps when entering their PIN).
 
-HapticLock is a novel, eyes-free mobile authentication system, which uses haptic cues based on Morse code to guide non-visual PIN entry. The touch gestures required for non-visual PIN entry (which are similar to the Scroll input method explored by Chen *et al.* [[1]](#1)) will cause overlapping marks to appear on the screen, making the resulting heat traces and smudges difficult to decipher[[2]](#2).
+HapticLock is a novel, eyes-free mobile authentication system, which uses haptic cues based on Morse code to guide non-visual PIN entry. The touch gestures required for non-visual PIN entry (which are similar to the Scroll input method explored by Chen *et al.* [[1]](#1)) will cause overlapping marks to appear on the screen, making the resulting heat traces and smudges difficult to decipher [[2]](#2).
 
 HapticLock was created for an undergraduate MSci research project titled: 'HapticLock: Evaluating Eyes-free Authentication Resistant to Shoulder Surfing'. 
 
@@ -57,11 +57,11 @@ The current number will always be between 0 and 9 inclusive, e.g., swiping up fr
 
 Before using the app, please familiarise yourself with Morse code for digits from 0 to 9 inclusive by using this [Morse code translator](https://morsecode.world/international/translator.html).
 
-When you open the app, you will be presented with a menu of options with predefined PINs/passcodes which can be found [here](https://github.com/gdcodes/HapticLock/blob/main/HapticLock/HapticLock/HapticLock/PredefinedValues.swift)[*].
+When you open the app, you will be presented with a menu of options with predefined PINs/passcodes which can be found [here](https://github.com/gdcodes/HapticLock/blob/main/HapticLock/HapticLock/HapticLock/PredefinedValues.swift)*.
 
 If you tap one of the options, you will be taken to a blank screen where you can enter the corresponding predefined PIN by using the aforementioned touch gestures. If you enter the wrong PIN, the standard iOS haptic feedback will be generated to indicate a failed attempt and the digits that you entered will be erased; otherwise, you will be taken to a screen representing the 'Home' screen with a welcome message.
 
-[*] Please note: the following code snippet will not be used in version 2.0+ (which only allows 4-digit PIN entry). Instead, in version 2.0+, the PINs for options 1, 2 and 3 are reused for options 4, 5 and 6, respectively.
+*Please note: the following code snippet will not be used in version 2.0+ (which only allows 4-digit PIN entry). Instead, in version 2.0+, the PINs for options 1, 2 and 3 are reused for options 4, 5 and 6, respectively.
 ```
 struct SixDigitPasscode {
   static let optionOne = "847395"
@@ -89,6 +89,7 @@ HapticLock is MIT licensed. See [LICENSE](https://github.com/gdcodes/HapticLock/
 <a id="1">[1]</a> 
 C. Chen, S. H. Chua, D. Chung, S. T. Perrault,
 S. Zhao, and W. Kei. Eyes-free gesture passwords: a comparison of various eyes-free input methods. In Proceedings of the Second International Symposium of Chinese CHI, Chinese CHI ’14, New York, NY, USA, Apr. 2014. Association for Computing Machinery. [DOI](https://doi.org/10.1145/2592235.2592248).
+
 <a id="2">[2]</a> 
 Y. Abdelrahman, M. Khamis, S. Schneegass, and
 F. Alt. Stay Cool! Understanding Thermal Attacks on Mobile-based User Authentication. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems, CHI ’17, New York, NY, USA, May 2017. Association for Computing Machinery. [DOI](https://dl.acm.org/doi/10.1145/3025453.3025461).
