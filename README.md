@@ -1,14 +1,18 @@
 # HapticLock
 
-Although PIN entry is widely used for mobile authentication, as a primary tool or fallback mechanism, it is vulnerable to several types of observational/side-channel attacks including shoulder surfing, smudge and thermal attacks. 
+Although PIN entry is widely used for mobile authentication, as a primary tool or fallback mechanism, it is vulnerable to several types of side-channel attacks including shoulder surfing, smudge and thermal attacks. 
 
-Shoulder surfing refers to the practice of observing someone to gain unauthorised access to private information. Visual output provides observational attackers with context for touchscreen interaction (e.g., allowing them to identify a PIN by watching which icons the user taps).
+Visual output and fingertip traces can be exploited by attackers to gain unauthorised access to a system (e.g., by watching or recording which icons a user taps when entering their PIN).
 
-HapticLock is a novel, eyes-free mobile authentication system, which uses haptic cues based on Morse code to guide non-visual PIN entry. 
+HapticLock is a novel, eyes-free mobile authentication system, which uses haptic cues based on Morse code to guide non-visual PIN entry. The touch gestures required for non-visual PIN entry (which are similar to the Scroll input method explored by Chen *et al.* [[1]](#1)) will cause overlapping marks to appear on the screen, making the resulting heat traces and smudges difficult to decipher[[2]](#2).
 
-HapticLock was created for a MSci research project titled: 'HapticLock: Evaluating Eyes-free Authentication Resistant to Shoulder Surfing'. The project involved extending the audio-assisted scroll input method explored by Chen *et al.* [[1]](#1) and investigating the use of haptic cues, instead of audio, to support non-visual PIN entry. 
+HapticLock was created for an undergraduate MSci research project titled: 'HapticLock: Evaluating Eyes-free Authentication Resistant to Shoulder Surfing'. 
 
-The usability and security of HapticLock was evaluated in three user studies. Findings show that HapticLock is resistant to video-based shoulder surfing attacks when the device is held in the user’s pocket and provides sufficient protection when the screen is unobscured and the authentication process begins at a random number. In addition, while HapticLock requires more time for authentication compared to traditional PIN entry, results show that it has a low error rate and users would use it when in the presence of potential observers or when accessing private information. 
+HapticLock was evaluated in three user studies for the project. Feedback gained from the first usability study was used to refine the system. Subsequent findings showed that HapticLock is capable of mitigating video-based shoulder surfing attacks when the screen is obscured (i.e., when the mobile device is held in the user's pocket during authentication) or when the screen is visible to the attacker (i.e., from a clear over-the-shoulder viewpoint) and the authentication process begins at a random number. 
+
+While HapticLock requires more time for authentication compared to standard PIN entry, results show that it has a low error rate and its haptic cues can be learned quickly by users with no prior experience interpreting Morse code. HapticLock is therefore suitable for use on demand when users attempt to access sensitive information or execute personal transactions, mitigating shoulder surfing and other side-channel attacks.
+
+This work was extended by academic staff at the University of Glasgow and accepted at the 23rd ACM International Conference on Multimodal Interaction. The published paper and supplemental material is accesible [here](http://dx.doi.org/10.1145/3462244.3481001).
 
 If you would like to know more about the research or have other enquires, please send an email to [hapticpatternlock@gmail.com](mailto:hapticpatternlock@gmail.com).
 
@@ -24,7 +28,7 @@ If you would like to know more about the research or have other enquires, please
 1. Open workspace (HapticLock.xcworkspace) in Xcode
 2. Go to Product -> Scheme and select HapticLock
 3. Connect iPhone to computer and select connected device from dropdown menu (near the stop button on the top left of the screen)
-4. Select the play button to run the app (to do this you may need to trust developer profile by following the steps outlined [here](https://apple.stackexchange.com/questions/206143/ios-untrusted-developer-error-when-testing-app/206144))
+4. Select the play button to run the app (to do this you may need to trust the developer profile by following the steps outlined [here](https://apple.stackexchange.com/questions/206143/ios-untrusted-developer-error-when-testing-app/206144))
 
 ## Guide to Using the App
 
@@ -84,4 +88,7 @@ HapticLock is MIT licensed. See [LICENSE](https://github.com/gdcodes/HapticLock/
 
 <a id="1">[1]</a> 
 C. Chen, S. H. Chua, D. Chung, S. T. Perrault,
-S. Zhao, and W. Kei. Eyes-free gesture passwords: a comparison of various eyes-free input methods. In Proceedings of the Second International Symposium of Chinese CHI, Chinese CHI ’14, New York, NY, USA, Apr. 2014. Association for Computing Machinery. DOI: [https://doi.org/10.1145/2592235.2592248](https://doi.org/10.1145/2592235.2592248).
+S. Zhao, and W. Kei. Eyes-free gesture passwords: a comparison of various eyes-free input methods. In Proceedings of the Second International Symposium of Chinese CHI, Chinese CHI ’14, New York, NY, USA, Apr. 2014. Association for Computing Machinery. [DOI](https://doi.org/10.1145/2592235.2592248).
+<a id="2">[2]</a> 
+Y. Abdelrahman, M. Khamis, S. Schneegass, and
+F. Alt. Stay Cool! Understanding Thermal Attacks on Mobile-based User Authentication. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems, CHI ’17, New York, NY, USA, May 2017. Association for Computing Machinery. [DOI](https://dl.acm.org/doi/10.1145/3025453.3025461).
