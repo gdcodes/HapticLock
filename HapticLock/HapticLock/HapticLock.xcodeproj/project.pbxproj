@@ -20,9 +20,9 @@
 		578446AF25C094760019F991 /* PredefinedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578446AE25C094760019F991 /* PredefinedValues.swift */; };
 		57E2F5AC25B6EEA500727085 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E2F5AB25B6EEA500727085 /* HomeViewController.swift */; };
 		57EDA5D725CC142000B42AE4 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EDA5D625CC142000B42AE4 /* Constraints.swift */; };
-		57EDA5EF25CC1ED700B42AE4 /* HiddenLockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EDA5ED25CC1ED700B42AE4 /* HiddenLockTests.swift */; };
+		57EDA5EF25CC1ED700B42AE4 /* HapticLockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EDA5ED25CC1ED700B42AE4 /* HapticLockTests.swift */; };
 		57EDA5F025CC1ED700B42AE4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57EDA5EE25CC1ED700B42AE4 /* Info.plist */; };
-		57EDA5F825CC1EE400B42AE4 /* HiddenLockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EDA5F625CC1EE400B42AE4 /* HiddenLockUITests.swift */; };
+		57EDA5F825CC1EE400B42AE4 /* HapticLockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EDA5F625CC1EE400B42AE4 /* HapticLockUITests.swift */; };
 		57EDA5F925CC1EE400B42AE4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57EDA5F725CC1EE400B42AE4 /* Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -74,9 +74,9 @@
 		578446AE25C094760019F991 /* PredefinedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredefinedValues.swift; sourceTree = "<group>"; };
 		57E2F5AB25B6EEA500727085 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		57EDA5D625CC142000B42AE4 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
-		57EDA5ED25CC1ED700B42AE4 /* HiddenLockTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiddenLockTests.swift; sourceTree = "<group>"; };
+		57EDA5ED25CC1ED700B42AE4 /* HapticLockTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticLockTests.swift; sourceTree = "<group>"; };
 		57EDA5EE25CC1ED700B42AE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57EDA5F625CC1EE400B42AE4 /* HiddenLockUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiddenLockUITests.swift; sourceTree = "<group>"; };
+		57EDA5F625CC1EE400B42AE4 /* HapticLockUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticLockUITests.swift; sourceTree = "<group>"; };
 		57EDA5F725CC1EE400B42AE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,7 +157,7 @@
 		57EDA5EC25CC1ED700B42AE4 /* HapticLockTests */ = {
 			isa = PBXGroup;
 			children = (
-				57EDA5ED25CC1ED700B42AE4 /* HiddenLockTests.swift */,
+				57EDA5ED25CC1ED700B42AE4 /* HapticLockTests.swift */,
 				57EDA5EE25CC1ED700B42AE4 /* Info.plist */,
 			);
 			path = HapticLockTests;
@@ -166,7 +166,7 @@
 		57EDA5F525CC1EE400B42AE4 /* HapticLockUITests */ = {
 			isa = PBXGroup;
 			children = (
-				57EDA5F625CC1EE400B42AE4 /* HiddenLockUITests.swift */,
+				57EDA5F625CC1EE400B42AE4 /* HapticLockUITests.swift */,
 				57EDA5F725CC1EE400B42AE4 /* Info.plist */,
 			);
 			path = HapticLockUITests;
@@ -320,7 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57EDA5EF25CC1ED700B42AE4 /* HiddenLockTests.swift in Sources */,
+				57EDA5EF25CC1ED700B42AE4 /* HapticLockTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57EDA5F825CC1EE400B42AE4 /* HiddenLockUITests.swift in Sources */,
+				57EDA5F825CC1EE400B42AE4 /* HapticLockUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
