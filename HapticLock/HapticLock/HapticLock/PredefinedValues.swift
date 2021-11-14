@@ -7,9 +7,3 @@ struct FourDigitPasscode {
     static let optionTwo = "9274"
     static let optionThree = "0592"
 }
-
-struct SixDigitPasscode {
-    static let optionOne = "847395"
-    static let optionTwo = "261407"
-    static let optionThree = "580613"
-}
