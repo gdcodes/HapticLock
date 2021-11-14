@@ -12,7 +12,7 @@ HapticLock was evaluated in three user studies for the project. Feedback gained 
 
 While HapticLock requires more time for authentication compared to standard PIN entry, results show that it has a low error rate and its haptic cues can be learned quickly by users with no prior experience interpreting Morse code. HapticLock is therefore suitable for use on demand when users attempt to access sensitive information or execute personal transactions, mitigating shoulder surfing and other side-channel attacks.
 
-This work was extended by academic staff at the University of Glasgow and accepted at the 23rd ACM International Conference on Multimodal Interaction. The published paper and supplemental material is accesible [here](http://dx.doi.org/10.1145/3462244.3481001).
+This work was extended by academic staff at the University of Glasgow and accepted at the 23rd ACM International Conference on Multimodal Interaction. The published paper and supplemental material is accessible [here](http://dx.doi.org/10.1145/3462244.3481001).
 
 If you would like to know more about the research or have other enquires, please send an email to [hapticpatternlock@gmail.com](mailto:hapticpatternlock@gmail.com).
 
